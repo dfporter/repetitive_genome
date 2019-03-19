@@ -132,4 +132,9 @@ STAR --genomeSAindexNbases 5 --limitGenomeGenerateRAM 100000000000 --runThreadN 
 # --genomeSAindexNbases 5 is well below the default 14. It speeds up the mapping to small genomes.
 ```
 
+When mapping, be sure to add a parameter like --alignIntronMax 1 to prevent STAR from inserting
+introns into this artificial chromosome and connecting separate repeats.
+
+
+
 
