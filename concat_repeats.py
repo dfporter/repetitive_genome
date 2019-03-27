@@ -39,7 +39,7 @@ with open('single_chr.fa', 'w') as f:
 with open('repeats.gtf', 'w') as f:
 	for li in gft_info:
 		f.write(
-			'repeats\trepeats\texon\t{}\t{}\t.\t+\t.\tgene_id "{}"; transcript_id "{}"; biotype "{}";\n'.format(
-				li['Start'], li['End'], li['Gene'], li['Gene'], li['Gene'].split('#')[1]))
+			'repeats\trepeats\texon\t{}\t{}\t.\t+\t.\tgene_id "{}"; gene_name "{}"; transcript_id "{}"; biotype "{}";\n'.format(
+				li['Start'], li['End'], li['Gene'], li['Gene'], li['Gene'], li['Gene'].split('#')[1]))
 
 
